@@ -63,7 +63,7 @@ const databaseNotes = JSON.parse(databaseRead)
     });
 
 
-app.delete("/api/notes/:id", function (req, res) {
+app.delete("/notes/:id", function (req, res) {
     let jsonFilePath = path.join(__dirname, "/db/db.json");
     // request to delete note by id.
     for (let i = 0; i < database.length; i++) {
